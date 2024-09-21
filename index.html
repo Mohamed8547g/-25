@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>حاسب العمر</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="appTitle">حاسب العمر</h1>
+
+        <input type="date" id="birthdate" placeholder="اختر تاريخ الميلاد">
+
+        <button id="calculateBtn">احسب عمري</button>
+
+        <div id="result"></div>
+
+        <button id="settingsBtn" class="settings-icon">⚙️</button>
+
+    </div>
+
+    <div id="settingsPopup" class="popup">
+
+        <div class="popup-content">
+
+            <span id="closeBtn">×</span>
+
+            <h2>الإعدادات</h2>
+
+            <h3>اختر اللون الخلفي:</h3>
+
+            <button class="color-btn" data-color="white">أبيض</button>
+
+            <button class="color-btn" data-color="black">أسود</button>
+
+            <h3>اختر الدولة:</h3>
+
+            <select id="countrySelect">
+
+                <option value="مصر">مصر</option>
+
+                <option value="أمريكا">أمريكا</option>
+
+                <option value="فرنسا">فرنسا</option>
+
+                <option value="كندا">كندا</option>
+
+                <option value="الأردن">الأردن</option>
+
+                <option value="الإمارات العربية المتحدة">الإمارات</option>
+
+                <!-- أضف المزيد من الدول حسب الحاجة -->
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
