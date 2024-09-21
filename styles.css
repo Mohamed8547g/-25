@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #f0f0f0; /* لون الخلفية */
+    color: #333; /* لون النص */
     text-align: center;
 }
 
@@ -9,7 +9,7 @@ body {
     margin: 50px auto;
     padding: 20px;
     border-radius: 8px;
-    background-color: white;
+    background-color: #ffffff; /* لون الخلفية للعنصر الرئيسي */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
@@ -21,13 +21,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* خلفية داكنة عند فتح الإعدادات */
     justify-content: center;
     align-items: center;
 }
 
 .popup-content {
-    background-color: white;
+    background-color: #ffffff; /* لون الخلفية لنافذة الإعدادات */
     padding: 20px;
     border-radius: 8px;
     position: relative;
@@ -39,4 +39,19 @@ body {
 
 .color-btn {
     margin: 5px;
+    padding: 10px; /* إضافة حشو للأزرار */
+    border: none; /* إزالة الحدود الافتراضية */
+    border-radius: 5px; /* زوايا دائرية للأزرار */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الأزرار */
 }
+
+.color-btn[data-color="white"] {
+    background-color: #ffffff; /* زر اللون الأبيض */
+}
+
+.color-btn[data-color="black"] {
+    background-color: #000000; /* زر اللون الأسود */
+    color: #ffffff; /* نص الزر باللون الأبيض */
+}
+
+/* يمكنك إضافة المزيد من الألوان حسب الحاجة */
